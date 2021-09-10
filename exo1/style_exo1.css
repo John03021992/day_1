@@ -1,0 +1,59 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url(./font_ex1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+
+img {
+  padding: 1rem;
+}
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 3rem;
+}
+
+p {
+  letter-spacing: 0.5rem;
+  line-height: 3rem;
+  padding: 3rem;
+}
+
+.mot_barré {
+  text-decoration: line-through;
+}
+
+.mot_souligné {
+  text-decoration: underline;
+}
+
+.m1 {
+  color: aquamarine;
+}
+.m2 {
+  color: #007b92;
+}
+.m3 {
+  color: #b8e2f2;
+}
+.m4 {
+  color: #053942;
+}
+.m5 {
+  color: #000f14;
+}
+
+/* 1992/256  = 7
+1992-(256*7) = 200
+200/16 = 12.5
+200-(16*12) = 8 */
+
+/* 7C8
+11111001000 */
