@@ -8,10 +8,15 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "h1" "reponse";
+  grid-template-areas: "h1" "reponses";
   height: 100vh;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1rem;
+  background: url(./wallpaper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #paragraphe {
@@ -24,9 +29,9 @@ body {
 }
 
 #paragraphe p {
-  border-bottom: 2px solid #282828;
-  border-left: 2px solid #282828;
-  border-right: 2px solid #282828;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   width: 23rem;
@@ -34,12 +39,13 @@ body {
   margin: 0 auto;
   padding: 1rem;
   font-size: 2rem;
+  color: white;
 }
 
 #paragraphe h1 {
-  border-top: 2px solid #282828;
-  border-left: 2px solid #282828;
-  border-right: 2px solid #282828;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   width: 23rem;
@@ -48,10 +54,11 @@ body {
   padding: 1rem;
   font-size: 2.5rem;
   text-decoration: underline;
+  color: white;
 }
 
 #reponses {
-  grid-area: reponse;
+  grid-area: reponses;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,4 +67,16 @@ body {
   text-align: center;
   height: 100%;
   width: 100%;
+  color: white;
 }
+
+h2,
+h3 {
+    font-size: 1.5rem;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+
