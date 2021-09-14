@@ -37,4 +37,26 @@ dede.addEventListener("click", function () {
 
 // Section 4
 
+var fourResult = document.querySelector(".four-result");
+var encrypt = document.querySelector("#encrypt");
+encrypt.addEventListener("click", function () {
+  var userInput = document.querySelector(".user-input").value;
+  var result = [];
+  const alphabetMin = "abcdefghijklmnopqrstuvwxyz";
+  const alphabetMaj = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let pos = -1;
+  for (let i = 0; i < userInput.length; i++) {
+    if (alphabetMin.indexOf(userInput[i]) >= 0) {
+      pos = alphabetMin.indexOf(userInput[i]);
+      result.push(alphabetMaj[pos]);
+    } else if (alphabetMaj.indexOf(userInput[i]) >= 0) {
+      pos = alphabetMaj.indexOf(userInput[i]);
+      result.push(alphabetMin[pos]);
+    }
+  }
+  result = result.toString().replace(/,/g, "");
+  fourResult.innerHTML = `<p>${result}</p>`;
+});
+
+
 // Section 5
