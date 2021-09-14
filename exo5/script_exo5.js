@@ -58,5 +58,19 @@ encrypt.addEventListener("click", function () {
   fourResult.innerHTML = `<p>${result}</p>`;
 });
 
-
 // Section 5
+
+var generate = document.querySelector("#generate");
+var fiveResult = document.querySelector(".five-result");
+var chars =
+  "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var passwordLength = 12;
+var password = "";
+generate.addEventListener("click", function () {
+  password = "";
+  for (var i = 0; i <= passwordLength; i++) {
+    var randomNumber = Math.floor(Math.random() * chars.length);
+    password += chars.substring(randomNumber, randomNumber + 1);
+  }
+  fiveResult.innerHTML = `<p>${password}</p>`;
+});
